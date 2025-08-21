@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<head>
+<title>CSS Selectors</title>
+<style>
+    
+h1
+{ 
+color: darkblue; 
+} 
+         
+#main 
+{ 
+background: lightyellow;
+} 
+.highlight { color: red; }       
+
+    
+h2, p 
+{ 
+font-family: Arial;
+}
+
+    
+div p { color: green; }       
+div > p { font-weight: bold; } 
+h2 + p { background: lightgray; } 
+h2 ~ p { text-decoration: underline; } 
+
+    
+a[href] { color: purple; }        
+a[target="_blank"] { color: orange; } 
+
+a:hover
+{ 
+color: red; 
+} 
+   
+p:first-child 
+{
+font-style: italic; 
+} 
+
+li:nth-child(2)
+{ 
+color: blue; 
+} 
+  </style>
+</head>
+<body id="main">
+
+  <h1>CSS Selector Demo</h1>
+
+  <h2 class="highlight">Basic Selectors</h2>
+  <p>This is a paragraph inside body (affected by combinators too).</p>
+  <div>
+    <p>Child Paragraph inside div</p>
+    <span><p>Nested paragraph inside span</p></span>
+  </div>
+
+  <h2>Attribute Selectors</h2>
+  <p>Here are some links:</p>
+  <a href="https://example.com">Normal Link</a> <br>
+  <a href="https://google.com" target="_blank">Opens in new tab</a>
+
+  <h2>Pseudo Classes</h2>
+  <p>First child paragraph (italic)</p>
+  <p>Second paragraph after h2 (background gray, underline)</p>
+
+  <ul>
+    <li>Item 1</li>
+    <li>Item 2 (blue)</li>
+    <li>Item 3</li>
+  </ul>
+
+</body>
+</html>
