@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS var() Example</title>
+  <style>
+    :root {
+      --d1-bg: yellow;
+      --d1-color: red;
+      --accent-color: #0077cc;
+      --box-bg: white;
+      --box-radius: 10px;
+      
+    }
+
+    body {
+      background-color: var(--d1-bg);
+      color: var(--d1-color);
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      color: var(--accent-color);
+      text-align: center;
+    }
+
+    .s1 {
+      background: var(--box-bg);
+      border: 2px groove var(--accent-color);
+      padding: 15px;
+      border-radius: var(--box-radius);
+      margin: 15px auto ;
+      width: 300px;
+      height: 100px;
+      text-align: center;
+      padding: 50px;
+      font-size: 30px;
+    }
+
+    .highlight {
+      color: var(--accent-color);
+      font-weight: bold;
+      text-shadow: 2px 3px 2px yellow;
+      text-decoration: line-through;
+      text-transform: uppercase;
+    }
+  </style>
+</head>
+<body>
+  <h1>Using CSS Variables</h1> <hr>
+
+  <div class="s1">
+    This is a <span class="highlight">box</span> styled with var().
+  </div>
+
+  <div class="s1">
+    You can reuse the same variables for colors, padding, and borders.
+  </div>
+</body>
+</html>
