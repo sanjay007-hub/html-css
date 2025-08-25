@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<head>
+<title>Small Image Gallery</title>
+<style>
+body {
+margin: 0;
+padding: 0;
+font-family: sans-serif;
+background-color: #f2f2f2;
+}
+
+h2 {
+text-align: center;
+margin: 30px 0 10px;
+text-shadow: 0px 3px 4px red;
+text-transform: capitalize;
+text-decoration: underline;
+}
+
+.gallery-container {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-between;
+gap: 20px;
+padding: 20px;
+}
+
+.gallery-item {
+flex-grow: 1;
+flex-shrink: 1;
+flex-basis: 200px;
+background-color: white;
+border-radius: 8px;
+overflow: hidden;
+box-shadow: 0 4px 8px black;
+transition: transform 0.3s;
+}
+
+.gallery-item:hover {
+transform: scale(1.03);
+}
+
+.gallery-item img {
+width: 100%;
+height: 150px;
+object-fit: cover;
+}
+
+.caption {
+padding: 10px;
+text-align: center;
+font-size: 16px;
+}
+</style>
+</head>
+<body>
+
+<h2>Vinayagar Chaturthi</h2> <hr>
+
+<div class="gallery-container">
+<div class="gallery-item">
+<img src="https://images.unsplash.com/photo-1567591414240-e9c1e59f3e06?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z2FucGF0aXxlbnwwfHwwfHx8MA%3D%3D" alt="Image 1">
+<div class="caption">Image 1</div>
+</div>
+<div class="gallery-item">
+<img src="https://i.pinimg.com/236x/48/07/a3/4807a3c7399db01305c85ed3f4e24f38.jpg" alt="Image 2">
+<div class="caption">Image 2</div>
+</div>
+<div class="gallery-item">
+<img src="https://i.pinimg.com/736x/19/31/20/193120470668a918533731265888ccd9.jpg" alt="Image 3">
+<div class="caption">Image 3</div>
+</div>
+<div class="gallery-item">
+<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgOyACtyoPN3bAEO2nien_HU5GK3o5E1tDSNn0ik_ItwHAOHNerzIGzt1FJDRxARHT7YUU-0MKq0SyqE_GeG7UBhKvWOZ6bCEfd4VdTqEDqiBk4zUWpNFUK4hqR0mZkYnsM3whcCD4NEQI/s1600/Famous+Lalbaugcha+raja+Pandal%252C+Ganesh+Pandal+Hopping%252C+Mumbai.jpg" alt="Image 4">
+<div class="caption">Image 4</div>
+</div>
+<div class="gallery-item">
+<img src="https://images.pexels.com/photos/2900315/pexels-photo-2900315.jpeg?cs=srgb&dl=pexels-aarti-vijay-1207504-2900315.jpg&fm=jpg" alt="Image 5">
+<div class="caption">Image 5</div>
+</div>
+<div class="gallery-item">
+<img src="https://play-lh.googleusercontent.com/kkGMW3TKg5ZVqNv3Zq2l0cEN5e_saEdjkg1sVpfVdF9Pbe1ktMOIm0tpk4u3rLUDJXA" alt="Image 6">
+<div class="caption">Image 6</div>
+</div>
+</div>
+
+</body>
+</html>
