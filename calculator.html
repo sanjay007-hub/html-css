@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<head>
+<title>Calculator</title>
+ <style>
+body {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+background: lightgray;
+font-family: Arial, sans-serif;
+}
+
+.calculator {
+width: 320px;
+background: black;
+border-radius: 12px;
+overflow: hidden;
+box-shadow: 0 10px 30px gray;
+}
+
+.screen {
+background: white;
+color: black;
+font-size: 2rem;
+text-align: right;
+padding: 20px;
+box-sizing: border-box;
+}
+
+.buttons {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+gap: 8px;
+padding: 10px;
+background: dimgray;
+}
+
+.buttons button {
+padding: 20px;
+font-size: 1.2rem;
+border: none;
+border-radius: 8px;
+background: lightgray;
+color: black;
+cursor: pointer;
+}
+
+.buttons button:hover {
+background: silver;
+}
+
+ </style>
+</head>
+<body>
+
+<div class="calculator">
+<div class="screen">0</div>
+<div class="buttons">
+<button class="clear">AC</button>
+<button>±</button>
+<button>%</button>
+<button class="operator">÷</button>
+
+<button>7</button>
+<button>8</button>
+<button>9</button>
+<button class="operator">×</button>
+
+<button>4</button>
+<button>5</button>
+<button>6</button>
+<button class="operator">-</button>
+
+<button>1</button>
+<button>2</button>
+<button>3</button>
+<button>+</button>
+
+<button>0</button>
+<button>.</button>
+<button>=</button>
+<button>%</button>
+</div>
+</div>
+</body>
+</html>

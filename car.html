@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<head>
+<title>CarPad</title>
+<style>
+
+body {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+background-color: lightgray;
+}
+
+.phone {
+width: 320px;
+background: white;
+border-radius: 20px;
+box-shadow: 0 8px 20px gray;
+padding: 20px;
+}
+       
+.dialpad {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 12px;
+}
+
+.dial-btn {
+border-radius: 10px;
+font-size: 1.6rem;
+font-weight: bold;
+height: 80px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+color: white;
+}
+
+.car {
+font-size: 0.8rem;
+font-weight: normal;
+margin-top: 5px;
+}
+
+.btn-call {
+background: green;
+color: white;
+font-size: 1.3rem;
+font-weight: bold;
+border-radius: 10px;
+width: 100%;
+height: 60px;
+margin-top: 15px;
+border: none;
+}
+    
+   
+.bmw { 
+background: navy; 
+}
+
+.audi { 
+background: darkred;
+ }
+
+.benz { 
+background: darkgreen;
+ }
+
+.jaguar {
+ background: teal;
+ }
+
+.ford {
+ background: brown;
+ }
+
+.honda {
+ background: purple;
+ }
+
+.toyota {
+ background: olive; 
+}
+
+.kia {
+ background: darkorange; 
+}
+
+.nissan {
+ background: darkslategray;
+ }
+
+.tesla {
+ background: crimson; 
+}
+
+.star { 
+background: gray;
+ }
+
+.hash {
+ background: black;
+ }
+
+</style>
+</head>
+<body>
+
+<div class="phone">
+  
+
+<div class="dialpad">
+<div class="dial-btn bmw"><span class="car">BMW</span></div>
+<div class="dial-btn audi"><span class="car">Audi</span></div>
+<div class="dial-btn benz"><span class="car">Benz</span></div>
+<div class="dial-btn jaguar"><span class="car">Jaguar</span></div>
+<div class="dial-btn ford"><span class="car">Ford</span></div>
+<div class="dial-btn honda"><span class="car">Honda</span></div>
+<div class="dial-btn toyota"><span class="car">Toyota</span></div>
+<div class="dial-btn kia"><span class="car">Kia</span></div>
+<div class="dial-btn nissan"><span class="car">Nissan</span></div>
+<div class="dial-btn star"><span class="car">Innova</span></div>
+<div class="dial-btn tesla"><span class="car">Tesla</span></div>
+<div class="dial-btn hash"><span class="car">XUV 700</span></div></div>
+</div>
+
+</div>
+
+</body>
+</html>
